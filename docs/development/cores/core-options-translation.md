@@ -71,7 +71,7 @@ And for crowdin_translate.yml:
     - replace with the full path from the root of the repo to the
       'libretro_core_options_intl.h' file
 
-Create a Pull Request and ask a Crowdin project manager, either on [Crowdin](https://crowdin.com/project/retroarch) or, preferably, on [Discord](https://discord.gg/xuMbcVuF) in the `retroarch-translations` channel, to provide you with an access token. Create an Actions repository secret on GitHub named CROWDIN_API_KEY for this access token.
+Create a Pull Request and ask a Crowdin project manager, either on [Crowdin](https://crowdin.com/project/retroarch) or, preferably, on [Discord](https://ra-link.web.app/discord) in the `retroarch-translations` channel, to provide you with an access token. Create an Actions repository secret on GitHub named CROWDIN_API_KEY for this access token.
 
 <!-- TODO: set correct permissions https://github.com/marketplace/actions/github-push --> 
 When everything is ready, run the "Crowdin Translations Initial Setup" workflow manually to upload the source texts and any translations to Crowdin.

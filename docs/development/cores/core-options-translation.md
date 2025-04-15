@@ -20,11 +20,11 @@ The procedure should not fail - but those texts will not be made translatable.
 Also, please verify the existence and correct use of
 
    `#ifdef HAVE_LANGEXTRA`
-   
+
 and/or
-   
-   `#ifndef NAVE_NO_LANGEXTRA`
-   
+
+   `#ifndef HAVE_NO_LANGEXTRA`
+
 pre-compiler instructions in `libretro_core_options.h` to remove any
 references to additional languages on platforms which cannot handle them,
 e.g. due to limited RAM.
@@ -48,7 +48,7 @@ fill those placeholders with.
 Even then, one should still check if it produced the correct result:
 
 For `crowdin_prep.yml`:
-> **NOTE:** Please verify, that this workflow watches the correct branch!
+> **NOTE:** Please verify, that this workflow watches the correct branch (e.g. main, instead of master)!
 Uploads happen, whenever `libretro_core_options.h` of that branch is changed.
 
 - <PATH/TO/libretro_core_options.h FILE> (x2)
